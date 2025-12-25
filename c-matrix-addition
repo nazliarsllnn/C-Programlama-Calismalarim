@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Matrislerde toplama...
+
+int main(int argc, char *argv[]) {
+
+    int m1[2][3],m2[2][3],toplam[2][3];
+    int i,j;
+    
+    printf("1.Matris sayilarini girin\n");
+    printf("-----------------------------\n");
+    for(i=0;i<2;i++)
+    {
+    	for(j=0;j<3;j++)
+    	{
+    		printf("Matris sayilariniz [%d][%d]: ",i,j);
+    		scanf("%d",&m1[i][j]);
+		}
+	}
+    printf("\n");
+    printf("2.Matris sayilarini girin\n");
+    printf("-----------------------------\n");
+	for(i=0;i<2;i++)
+    {
+    	for(j=0;j<3;j++)
+    	{
+    		printf("Matris sayilariniz [%d][%d]: ",i,j);
+    		scanf("%d",&m2[i][j]);
+		}
+	}
+    printf("\n");
+    printf("    Toplam Matris\n");
+    printf("----------------------\n");
+    for(i=0;i<2;i++)
+    {
+    	for(j=0;j<3;j++)
+    	{
+    		toplam[i][j]=m1[i][j]+m2[i][j];
+    		printf("%d ",toplam[i][j]);
+		}
+	    printf("\n");
+	}
+
+
+	return 0;
+}
